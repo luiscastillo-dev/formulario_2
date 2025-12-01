@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CeraVe — Cuidado de la piel</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --azul-cerave: #0072ce;
+      --gris-medio: #e6eaee;
+      --gris-claro: #f5f7fa;
+      --texto: #263238;
+      --radio: 14px;
+      --max-width: 1200px;
+    }
+
+    body{
+      margin:0;
+      font-family:'Montserrat',sans-serif;
+      color:var(--texto);
+      background:#ffffff;
+    }
+
+    header{
+      position:fixed;
+      top:0;
+      width:100%;
+      background:#fff;
+      border-bottom:1px solid var(--gris-medio);
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      padding:12px 28px;
+      z-index:1000;
+    }
+
+    /* 🔵 NAV centrado */
+    nav{
+      flex:1;
+      text-align:center;
+    }
+
+    nav a{
+      color:var(--texto);
+      text-decoration:none;
+      margin:0 10px;
+      padding:8px 14px;
+      border-radius:20px;
+      transition:.2s;
+      font-weight:600;
+    }
+
+    nav a:hover{
+      background:var(--gris-claro);
+      color:var(--azul-cerave);
+    }
+
+    .logo img{
+      height:56px;
+    }
+
+    .banner{
+      margin-top:90px;
+      background: linear-gradient(180deg, rgba(0,115,206,0.1), rgba(0,115,206,0.03));
+      text-align:center;
+      padding:50px 20px;
+    }
+
+    .hero-title{
+      font-family:'Playfair Display', serif;
+      color:var(--azul-cerave);
+      font-size:3rem;
+    }
+
+    main{
+      max-width:var(--max-width);
+      margin:40px auto;
+      padding:20px;
+    }
+
+    .card{
+      background:#fff;
+      border-radius:var(--radio);
+      box-shadow:0 10px 30px rgba(0,0,0,0.06);
+      padding:30px;
+      margin-bottom:40px;
+    }
+
+    h2{
+      text-align:center;
+      font-family:'Playfair Display',serif;
+      color:var(--azul-cerave);
+      margin-bottom:20px;
+    }
+
+    .derma-img{
+      width:100%;
+      max-width:900px;
+      border-radius:12px;
+      display:block;
+      margin:0 auto 20px;
+    }
+
+    .productos{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:20px;
+    }
+
+    .producto{
+      background:#fff;
+      border:1px solid var(--gris-medio);
+      border-radius:14px;
+      padding:18px;
+      text-align:center;
+      transition:.2s;
+    }
+
+    .producto:hover{
+      transform:translateY(-8px);
+    }
+
+    .producto img{
+      width:100%;
+      height:230px;
+      object-fit:contain;
+    }
+
+    .btn-primary{
+      display:inline-block;
+      margin-top:12px;
+      background:var(--azul-cerave);
+      color:white;
+      padding:12px 18px;
+      border-radius:999px;
+      font-weight:700;
+      text-decoration:none;
+    }
+
+    form{
+      max-width:760px;
+      margin:0 auto;
+      display:grid;
+      gap:12px;
+    }
+
+    input,select{
+      padding:12px;
+      border-radius:10px;
+      border:1px solid var(--gris-medio);
+    }
+
+    .boton-form{
+      background:var(--azul-cerave);
+      color:white;
+      padding:12px;
+      border:none;
+      border-radius:10px;
+      font-weight:700;
+      cursor:pointer;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      background:#f8fbff;
+      border-top:1px solid var(--gris-medio);
+      margin-top:40px;
+    }
+  </style>
+</head>
+	"https://script.google.com/macros/s/AKfycbyNPsVnTv7yNWjTDgYIUFgxzu_XTMtXvRAiI2Q2jso-nPpjIVc00L-SfUmlOz-ijTiNMA/exec",
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="https://brandlogovector.com/wp-content/uploads/2021/11/CeraVe-Logo-Small.png" alt="Logo Cerave">
+  </div>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#por-que">¿Por qué CeraVe?</a>
+    <a href="#productos">Productos</a>
+    <a href="#formulario">Comprar</a>
+  </nav>
+</header>
+
+<section class="banner" id="inicio">
+  <h1 class="hero-title">CeraVe</h1>
+  <p>Desarrollado con dermatólogos • Ceramidas esenciales</p>
+</section>
+
+<main>
+
+  <section class="card" id="por-que">
+    <h2>¿Por qué CeraVe?</h2>
+
+    <img class="derma-img" src="https://www.blinkshop.com/images/Userfiles/cerave_pt_en.png" alt="Banner Cerave">
+
+    <p style="text-align:center; max-width:850px; margin:0 auto;">
+      CeraVe ayuda a restaurar la barrera natural de la piel gracias a sus ceramidas esenciales
+      y fórmulas desarrolladas por dermatólogos.
+    </p>
+  </section>
+
+  <section class="card" id="productos">
+    <h2>Nuestros Productos Estrella</h2>
+
+    <div class="productos">
+
+      <div class="producto">
+        <img src="https://a.cdnsbn.com/images/products/l/28030999501.jpg" alt="Limpiador Facial Cerave">
+        <h3>Limpiador Facial</h3>
+        <p>Limpieza suave sin resecar.</p>
+        <a class="btn-primary" href="#formulario">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <img src="https://dermamedina.com/cdn/shop/files/3337875598996_Cerave_Crema_Hidratante_170g_1.webp?v=1759425724&width=320" alt="Crema Hidratante CeraVe">
+        <h3>Crema Hidratante</h3>
+        <p>Hidratación por 24 horas.</p>
+        <a class="btn-primary" href="#formulario">Comprar</a>
+      </div>
+
+      <div class="producto">
+        <img src="https://i5.walmartimages.com/seo/CeraVe-Moisturizing-Facial-Lotion-PM-3-Ounce_106f00d0-7e6c-4d94-95ef-d92236b760d5.fd182d9242080954809df755a79366fb.jpeg" alt="Loción PM CeraVe">
+        <h3>Loción Facial PM</h3>
+        <p>Cuidado nocturno ligero.</p>
+        <a class="btn-primary" href="#formulario">Comprar</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="card" id="formulario">
+    <h2>¿Quieres comprar?</h2>
+
+    <form>
+      <label>Nombre completo</label>
+      <input type="text" required>
+
+      <label>Correo electrónico</label>
+      <input type="email" required>
+
+      <label>Teléfono</label>
+      <input type="tel" required>
+
+      <label>Producto de interés</label>
+      <select required>
+        <option>Limpiador Facial</option>
+        <option>Crema Hidratante</option>
+        <option>Loción Facial PM</option>
+      </select>
+
+      <button class="boton-form" type="submit">Enviar pedido</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  © 2025 CeraVe • Página demostrativa creada por Luis
+</footer>
+
+</body>
+</html>
