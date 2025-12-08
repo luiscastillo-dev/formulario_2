@@ -236,21 +236,22 @@
     </div>
   </section>
 
-  <section class="card" id="formulario">
+ <section class="card" id="formulario">
     <h2>¿Quieres comprar?</h2>
 
     <form method="post" action="https://script.google.com/macros/s/AKfycbwoIfa1tUAJjqo4jzwuiTGyy_GKR2EKi0DWyYXL1Lgb9PV0mqhQbyGaGtHcQUBzH4a8Wg/exec">
+      
       <label>Nombre completo</label>
-      <input type="text" required>
+      <input type="text" name="nombre" required>
 
       <label>Correo electrónico</label>
-      <input type="email" required>
+      <input type="email" name="correo" required>
 
       <label>Teléfono</label>
-      <input type="tel" required>
+      <input type="tel" name="telefono" required>
 
       <label>Producto de interés</label>
-      <select required>
+      <select name="producto" required>
         <option>Limpiador Facial</option>
         <option>Crema Hidratante</option>
         <option>Loción Facial PM</option>
@@ -258,7 +259,7 @@
 
       <button class="boton-form" type="submit">Enviar pedido</button>
     </form>
-  </section>
+</section>
 
 </main>
 
