@@ -1,389 +1,405 @@
 <html lang="es">
 <head>
-    <meta charset="utf-8">
-    <title>CeraVe | Cuidado de la Piel con Ceramidas</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>CeraVe | Cuidado de la Piel con Ceramidas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
+    <style>
 
-        body {
-            font-family: "Segoe UI", Arial, sans-serif;
-            margin: 0;
-            background-color: #f8f8f8;
-            color: #1a1a1a;
-            line-height: 1.6;
-        }
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            margin: 0;
+            background-color: #f8f8f8;
+            color: #1a1a1a;
+            line-height: 1.6;
+        }
 
-        header {
-            background-color: #00569a; 
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-        }
+        header {
+            background-color: #00569a; 
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
 
-        header h1 {
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-            font-size: 2.5em;
-        }
+        header h1 {
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+            font-size: 2.5em;
+        }
 
-        header p {
-            font-size: 1.1em;
-            opacity: 0.95;
-        }
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
 
-        section.acerca {
-            background-color: #ffffff;
-            padding: 40px 20px;
-            border-bottom: 4px solid #00569a; 
-            max-width: 900px;
-            margin: 40px auto 0 auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
+        section.acerca {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            border-bottom: 4px solid #00569a; 
+            max-width: 900px;
+            margin: 40px auto 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
 
-        section.acerca h2 {
-            color: #00569a; 
-            text-align: center;
-            margin-bottom: 25px;
-            font-size: 2em;
-        }
+        section.acerca h2 {
+            color: #00569a; 
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2em;
+        }
 
-        section.acerca p {
-            text-align: justify;
-            font-size: 1em;
-            color: #333;
-        }
+        section.acerca p {
+            text-align: justify;
+            font-size: 1em;
+            color: #333;
+        }
 
-        section.catalogo {
-            background-color: #ffffff;
-            padding: 40px 20px;
-          
-            border-top: 4px solid #00569a; 
-        }
+        section.catalogo {
+            background-color: #ffffff;
+            padding: 40px 20px;
+          
+            border-top: 4px solid #00569a; 
+        }
 
-        section.catalogo h2 {
-            color: #00569a; 
-            text-align: center;
-            margin-bottom: 30px;
-            font-size: 2em;
-        }
+        section.catalogo h2 {
+            color: #00569a; 
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
 
-        .card {
-            border: 1px solid #e0e0e0;
-            border-radius: 8px;
-            padding: 25px;
-            background-color: #ffffff;
-            text-align: center;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            background-color: #ffffff;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
 
-        .card h3 {
-            color: #00569a;
-            margin-bottom: 10px;
-            font-size: 1.25em;
-        }
+        .card h3 {
+            color: #00569a;
+            margin-bottom: 10px;
+            font-size: 1.25em;
+        }
 
-        .card p {
-            font-size: 0.95em;
-            margin-bottom: 12px;
-            color: #555;
-        }
+        .card p {
+            font-size: 0.95em;
+            margin-bottom: 12px;
+            color: #555;
+        }
 
-        .card strong {
-            display: block;
-            color: #1a1a1a;
-            font-weight: bold;
-            font-size: 1.1em;
-        }
-        
-        .card img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 15px auto 10px auto;
-            border-radius: 5px;
-        }
+        .card strong {
+            display: block;
+            color: #1a1a1a;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .card img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto 10px auto;
+            border-radius: 5px;
+        }
 
-        form {
-            background-color: #ffffff;
-            padding: 40px;
-            margin: 40px auto;
-            max-width: 900px;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-        }
+        form {
+            background-color: #ffffff;
+            padding: 40px;
+            margin: 40px auto;
+            max-width: 900px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
 
-        fieldset {
-            border: 2px solid #00569a; 
-            border-radius: 8px;
-            padding: 30px 40px;
-            margin-bottom: 25px;
-        }
+        fieldset {
+            border: 2px solid #00569a; 
+            border-radius: 8px;
+            padding: 30px 40px;
+            margin-bottom: 25px;
+        }
 
-        legend {
-            color: #00569a;
-            font-weight: bold;
-            font-size: 1.2em;
-            padding: 0 10px;
-        }
+        legend {
+            color: #00569a;
+            font-weight: bold;
+            font-size: 1.2em;
+            padding: 0 10px;
+        }
 
-        label {
-            display: block;
-            margin: 15px auto 6px auto;
-            max-width: 600px;
-            text-align: left;
-            font-weight: 600;
-            color: #333;
-        }
+        label {
+            display: block;
+            margin: 15px auto 6px auto;
+            max-width: 600px;
+            text-align: left;
+            font-weight: 600;
+            color: #333;
+        }
 
-        input, select, textarea {
-            display: block;
-            width: 100%;
-            max-width: 600px;
-            margin: 0 auto 20px auto;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            box-sizing: border-box;
-            font-size: 1em;
-            transition: border-color 0.2s;
-        }
+        input, select, textarea {
+            display: block;
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 1em;
+            transition: border-color 0.2s;
+        }
 
-        input:focus, select:focus, textarea:focus {
-            border-color: #00569a; 
-            outline: none;
-        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #00569a; 
+            outline: none;
+        }
 
-        textarea {
-            min-height: 100px;
-            resize: vertical;
-        }
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
 
-        button {
-            background-color: #00569a;
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 6px;
-            cursor: pointer;
-            margin: 5px;
-            font-size: 1em;
-            font-weight: bold;
-            transition: 0.3s ease;
-        }
+        button {
+            background-color: #00569a;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 1em;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
 
-        button[type="reset"] {
-            background-color: #555;
-        }
+        button[type="reset"] {
+            background-color: #555;
+        }
 
-        button:hover {
-            background-color: #00407a; 
-        }
-        
-        button[type="reset"]:hover {
-            background-color: #333;
-        }
+        button:hover {
+            background-color: #00407a; 
+        }
+        
+        button[type="reset"]:hover {
+            background-color: #333;
+        }
 
-        .footer {
-            background-color: #00569a; 
-            color: #fff;
-            text-align: center;
-            padding: 25px;
-            margin-top: 50px;
-            font-size: 0.9em;
-        }
+        .footer {
+            background-color: #00569a; 
+            color: #fff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
 
-        
-        #mensaje_resultado {
-            background-color: #e6f7ff; 
-            color: #00569a; 
-            border: 1px solid #b3d9ff; 
-        }
+        
+        #mensaje_resultado {
+            background-color: #e6f7ff; 
+            color: #00569a; 
+            border: 1px solid #b3d9ff; 
+        }
 
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-            .grid {
-                grid-template-columns: 1fr;
-            }
-            fieldset {
-                padding: 20px;
-            }
-            form {
-                padding: 25px;
-            }
-        }
-    </style>
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            fieldset {
+                padding: 20px;
+            }
+            form {
+                padding: 25px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>CeraVe <br>
-            Desarrollado con Dermatólogos
-        </h1>
-        <p>Fórmulas con 3 Ceramidas Esenciales para restaurar la barrera de tu piel</p>
-    </header>
+    <header>
+        <h1>CeraVe <br>
+            Desarrollado con Dermatólogos
+        </h1>
+        <p>Fórmulas con 3 Ceramidas Esenciales para restaurar la barrera de tu piel</p>
+    </header>
 
-    <section class="acerca">
-        <h2>Acerca de CeraVe</h2>
-        <p>
-            CeraVe es una marca de cuidado de la piel desarrollada con dermatólogos, reconocida por ofrecer soluciones eficaces y asequibles para todos los tipos de piel. 
-            Nuestra principal innovación radica en la combinación de **3 Ceramidas Esenciales** (1, 3 y 6-II), idénticas a las que se encuentran naturalmente en la piel, 
-            con nuestra tecnología patentada **MVE**. Esta tecnología permite una liberación controlada de los ingredientes hidratantes a lo largo del tiempo, 
-            ayudando a restaurar y mantener la barrera natural de la piel las 24 horas del día. CeraVe es la opción #1 recomendada por dermatólogos en Estados Unidos 
-            para hidratar (según IQVIA, ProVoice Survey 2023).
-        </p>
-    </section>
+    <section class="acerca">
+        <h2>Acerca de CeraVe</h2>
+        <p>
+            CeraVe es una marca de cuidado de la piel desarrollada con dermatólogos, reconocida por ofrecer soluciones eficaces y asequibles para todos los tipos de piel. 
+            Nuestra principal innovación radica en la combinación de **3 Ceramidas Esenciales** (1, 3 y 6-II), idénticas a las que se encuentran naturalmente en la piel, 
+            con nuestra tecnología patentada **MVE**. Esta tecnología permite una liberación controlada de los ingredientes hidratantes a lo largo del tiempo, 
+            ayudando a restaurar y mantener la barrera natural de la piel las 24 horas del día. CeraVe es la opción #1 recomendada por dermatólogos en Estados Unidos 
+            para hidratar (según IQVIA, ProVoice Survey 2023).
+        </p>
+    </section>
 
-    <section class="catalogo">
-        <h2>Productos Esenciales</h2>
-        <div class="grid">
-            <article class="card">
-                <h3>Crema Hidratante</h3>
-                <img src="https://dermamedina.com/cdn/shop/files/3337875598996_Cerave_Crema_Hidratante_170g_1.webp?v=1759425724&width=320" width="200" height="200" alt="Imagen de la Crema Hidratante CeraVe"/>
-                <p>Hidratación profunda y duradera para piel seca y muy seca. Ideal para cuerpo y rostro.</p>
-                <p><strong>$320 MXN</strong></p>
-            </article>
+    <section class="catalogo">
+        <h2>Productos Esenciales</h2>
+        <div class="grid">
+            <article class="card">
+                <h3>Crema Hidratante</h3>
+                <img src="https://dermamedina.com/cdn/shop/files/3337875598996_Cerave_Crema_Hidratante_170g_1.webp?v=1759425724&width=320" width="200" height="200" alt="Imagen de la Crema Hidratante CeraVe"/>
+                <p>Hidratación profunda y duradera para piel seca y muy seca. Ideal para cuerpo y rostro.</p>
+                <p><strong>$320 MXN</strong></p>
+            </article>
 
-            <article class="card">
-                <h3>Gel Limpiador Espumoso</h3>
-                <img src="https://i5.walmartimages.com/seo/CeraVe-Moisturizing-Facial-Lotion-PM-3-Ounce_106f00d0-7e6c-4d94-95ef-d92236b760d5.fd182d9242080954809df755a79366fb.jpeg" width="200" height="200" alt="Imagen del Gel Limpiador Espumoso CeraVe"/>
-                <p>Limpia suavemente y elimina el exceso de grasa. Perfecto para piel normal a grasa.</p>
-                <p><strong>$280 MXN</strong></p>
-            </article>
+            <article class="card">
+                <h3>Gel Limpiador Espumoso</h3>
+                <img src="https://i5.walmartimages.com/seo/CeraVe-Moisturizing-Facial-Lotion-PM-3-Ounce_106f00d0-7e6c-4d94-95ef-d92236b760d5.fd182d9242080954809df755a79366fb.jpeg" width="200" height="200" alt="Imagen del Gel Limpiador Espumoso CeraVe"/>
+                <p>Limpia suavemente y elimina el exceso de grasa. Perfecto para piel normal a grasa.</p>
+                <p><strong>$280 MXN</strong></p>
+            </article>
 
-            <article class="card">
-                <h3>Loción Hidratante de Rostro AM FPS 30</h3>
-                <img src="https://a.cdnsbn.com/images/products/l/28030999501.jpg" width="200" height="200" alt="Imagen de la Loción Hidratante Facial de Día CeraVe"/>
-                <p>Hidrata y ayuda a proteger la piel del daño solar diario con amplio espectro FPS 30.</p>
-                <p><strong>$350 MXN</strong></p>
-            </article>
+            <article class="card">
+                <h3>Loción Hidratante de Rostro AM FPS 30</h3>
+                <img src="https://a.cdnsbn.com/images/products/l/28030999501.jpg" width="200" height="200" alt="Imagen de la Loción Hidratante Facial de Día CeraVe"/>
+                <p>Hidrata y ayuda a proteger la piel del daño solar diario con amplio espectro FPS 30.</p>
+                <p><strong>$350 MXN</strong></p>
+            </article>
+        </div>
+    </section>
 
 
-    <form id="formulario_pedido">
-        <fieldset>
-            <legend>Información Personal</legend>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="usuario_nombre" placeholder="Nombre o Nombres" required>
+    <form id="formulario_pedido">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="usuario_nombre" placeholder="Nombre o Nombres" required>
 
-            <label for="apellido_p">Apellido Paterno:</label>
-            <input type="text" id="apellido_p" name="usuario_apellido_p" placeholder="Apellido Paterno" required>
+            <label for="apellido_p">Apellido Paterno:</label>
+            <input type="text" id="apellido_p" name="usuario_apellido_p" placeholder="Apellido Paterno" required>
 
-            <label for="email">Correo electrónico:</label>
-            <input type="email" id="email" name="usuario_email" placeholder="tucorreo@ejemplo.com" required>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="usuario_email" placeholder="tucorreo@ejemplo.com" required>
 
-            <label for="tel">Teléfono:</label>
-            <input type="tel" id="tel" name="usuario_tel" placeholder="55 1234 5678" pattern="[0-9\s+]{8,}" required>
-        </fieldset>
+            <label for="tel">Teléfono:</label>
+            <input type="tel" id="tel" name="usuario_tel" placeholder="55 1234 5678" pattern="[0-9\s+]{8,}" required>
+        </fieldset>
 
-        <fieldset>
-            <legend>Pedido</legend>
-            <label for="producto">Selecciona tu producto:</label>
-            <select id="producto" name="pedido_item" required>
-                <option value="">Selecciona una opción</option>
-                <option value="crema_hidratante">Crema Hidratante</option>
-                <option value="limpiador_espumoso">Gel Limpiador Espumoso</option>
-                <option value="locion_am">Loción Hidratante de Rostro AM FPS 30</option>
-                <option value="contorno_ojos">Contorno de Ojos Reparador</option>
-            </select>
+        <fieldset>
+            <legend>Pedido</legend>
+            <label for="producto">Selecciona tu producto:</label>
+            <select id="producto" name="pedido_item" required>
+                <option value="">Selecciona una opción</option>
+                <option value="crema_hidratante">Crema Hidratante</option>
+                <option value="limpiador_espumoso">Gel Limpiador Espumoso</option>
+                <option value="locion_am">Loción Hidratante de Rostro AM FPS 30</option>
+                <option value="contorno_ojos">Contorno de Ojos Reparador</option>
+            </select>
 
-            <label for="cantidad">Cantidad:</label>
-            <input type="number" id="cantidad" name="pedido_cantidad" min="1" value="1" required>
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="pedido_cantidad" min="1" value="1" required>
 
-            <label for="fecha">Fecha de entrega deseada:</label>
-            <input type="date" id="fecha" name="pedido_fecha" required>
+            <label for="fecha">Fecha de entrega deseada:</label>
+            <input type="date" id="fecha" name="pedido_fecha" required>
 
-            <label for="hora">Hora preferente:</label>
-            <input type="time" id="hora" name="pedido_hora">
+            <label for="hora">Hora preferente:</label>
+            <input type="time" id="hora" name="pedido_hora">
 
-            <label for="mensaje">Comentarios o instrucciones:</label>
-            <textarea id="mensaje" name="usuario_mensaje" placeholder="Ejemplo: especificar tamaño de envase o dirección de entrega."></textarea>
-        </fieldset>
+            <label for="mensaje">Comentarios o instrucciones:</label>
+            <textarea id="mensaje" name="usuario_mensaje" placeholder="Ejemplo: especificar tamaño de envase o dirección de entrega."></textarea>
+        </fieldset>
 
-        <fieldset>
-            <legend>Confirmación</legend>
-            <label>
-                <input type="checkbox" name="terminos" required>
-                Confirmo que la información proporcionada es correcta y acepto los términos.
-            </label>
-            <br><br>
-            <div style="text-align:center;">
-                <button type="submit">Enviar Pedido</button>
-                <button type="reset">Limpiar</button>
-            </div>
-        </fieldset>
-    </form>
-    <div id="mensaje_resultado" style="max-width: 900px; margin: 20px auto; padding: 20px; border-radius: 10px; text-align: center; font-weight: bold;"></div>
+        <fieldset>
+            <legend>Confirmación</legend>
+            <label>
+                <input type="checkbox" name="terminos" required>
+                Confirmo que la información proporcionada es correcta y acepto los términos.
+            </label>
+            <br><br>
+            <div style="text-align:center;">
+                <button type="submit">Enviar Pedido</button>
+                <button type="reset">Limpiar</button>
+            </div>
+        </fieldset>
+    </form>
+    <div id="mensaje_resultado" style="max-width: 900px; margin: 20px auto; padding: 20px; border-radius: 10px; text-align: center; font-weight: bold;"></div>
 
-    <div class="footer">
-        <p>© 2025 CeraVe México — Desarrollado con dermatólogos. La Ciencia de las Ceramidas.</p>
-    </div>
+    <div class="footer">
+        <p>© 2025 CeraVe México — Desarrollado con dermatólogos. La Ciencia de las Ceramidas.</p>
+    </div>
 
-    <script>
-    
-        const scriptURL = 'https://script.google.com/macros/library/d/1iEmcDidU_545AUHcrmpdWXGQPreuIKFOUxaPiigpCkdtF8y5t2VCgbCJ/3';
+        <script>
+    
+        // 🚨 ESTA URL DEBE SER REEMPLAZADA POR LA DE TU WEB APP DE APPS SCRIPT (DEBE TERMINAR EN /exec)
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwoIfa1tUAJjqo4jzwuiTGyy_GKR2EKi0DWyYXL1Lgb9PV0mqhQbyGaGtHcQUBzH4a8Wg/exec'; 
 
-        const form = document.getElementById('formulario_pedido');
-        const resultadoDiv = document.getElementById('mensaje_resultado');
-        const submitButton = form.querySelector('button[type="submit"]');
+        const form = document.getElementById('formulario_pedido');
+        const resultadoDiv = document.getElementById('mensaje_resultado');
+        const submitButton = form.querySelector('button[type="submit"]');
 
-        form.addEventListener('submit', e => {
-            e.preventDefault(); 
-            
-            
-            submitButton.disabled = true;
-            submitButton.textContent = 'Enviando...';
-            resultadoDiv.style.display = 'none'; 
+        form.addEventListener('submit', e => {
+            e.preventDefault(); 
+            
+            // Deshabilitar botón y mostrar mensaje de envío
+            submitButton.disabled = true;
+            submitButton.textContent = 'Enviando...';
+            resultadoDiv.style.display = 'none'; 
+            resultadoDiv.innerHTML = ''; // Limpiar mensajes anteriores
 
-           
-            fetch(scriptURL, { 
-                method: 'POST', 
-                body: new FormData(form) 
-            })
-            .then(response => response.json()) 
-            .then(data => {
-                // 
-                if (data.result === 'success') {
-                    resultadoDiv.innerHTML = `✅ **¡Pedido enviado con éxito!** Gracias por tu compra. Te contactaremos pronto. (Registro en fila ${data.row})`;
-                    resultadoDiv.style.cssText += 'background-color: #e6f7ff; color: #00569a; border: 1px solid #b3d9ff;'; 
-                    form.reset(); 
-                } else {
-                    resultadoDiv.innerHTML = `❌ **Error al enviar el pedido.** Por favor, inténtalo de nuevo. Error: ${data.error || 'Desconocido'}`;
-                    resultadoDiv.style.cssText += 'background-color: #fcebeb; color: #a94442; border: 1px solid #f2dede;'; 
+            // Ejecutar Fetch
+            fetch(scriptURL, { 
+                method: 'POST', 
+                body: new FormData(form),
+                // Apps Script requiere el modo 'no-cors' para formularios simples, 
+                // pero si usas el Web App correcto, el modo por defecto es mejor.
+            })
+            .then(response => {
+                // 1. Verificar estado HTTP. Si no es 200 (OK), lanzar un error con el estado.
+                if (!response.ok) {
+                    throw new Error(`Error de servidor HTTP: ${response.status} ${response.statusText}`);
                 }
+                // 2. Intentar leer la respuesta como JSON
+                return response.json();
             })
-            .catch(error => {
-                // 
-                console.error('Error:', error);
-                resultadoDiv.innerHTML = '⚠️ **Error de red.** Por favor, verifica tu conexión a internet.';
-                resultadoDiv.style.cssText += 'background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba;'; 
-            })
-            .finally(() => {
-                // 
-                submitButton.disabled = false;
-                submitButton.textContent = 'Enviar Pedido';
-                resultadoDiv.style.display = 'block';
-                resultadoDiv.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
-            });
-        });
-    </script>
-    
+            .then(data => {
+                // 3. Procesar el resultado del JSON (que viene de Apps Script)
+                if (data && data.result === 'success') {
+                    resultadoDiv.innerHTML = `✅ **¡Pedido enviado con éxito!** Gracias por tu compra. Te contactaremos pronto. (Registro en fila ${data.row || 'no especificada'})`;
+                    resultadoDiv.style.cssText += 'background-color: #e6f7ff; color: #00569a; border: 1px solid #b3d9ff;'; 
+                    form.reset(); 
+                } else {
+                    // Si el script devolvió un JSON, pero no contenía 'result: success'
+                    // JSON.stringify(data) mostrará el objeto completo de forma legible
+                    const errorDetail = data ? (data.error || JSON.stringify(data)) : 'Respuesta JSON inválida.';
+                    resultadoDiv.innerHTML = `❌ **Error en la respuesta del Script.** Detalle: ${errorDetail}`;
+                    resultadoDiv.style.cssText += 'background-color: #fcebeb; color: #a94442; border: 1px solid #f2dede;'; 
+                }
+            })
+            .catch(error => {
+                // Captura errores de red, fallos de response.ok (arriba), o fallos al leer el JSON
+                console.error('Error:', error);
+                resultadoDiv.innerHTML = `⚠️ **Error de conexión o de servidor.** Detalle: ${error.message}`;
+                resultadoDiv.style.cssText += 'background-color: #fff3cd; color: #856404; border: 1px solid #ffeeba;'; 
+            })
+            .finally(() => {
+                // Restablecer botón y mostrar resultado
+                submitButton.disabled = false;
+                submitButton.textContent = 'Enviar Pedido';
+                resultadoDiv.style.display = 'block';
+                resultadoDiv.scrollIntoView({ behavior: 'smooth', block: 'start' }); 
+            });
+        });
+    </script>
+        
 </body>
 </html>
